@@ -14,7 +14,7 @@ class Main(QtWidgets.QMainWindow):
         r = randint(0, 255)
         g = randint(0, 255)
         b = randint(0, 255)
-        painter.setBrush(QtGui.QBrush(QtCore.QColor(r, g, b)))
+        painter.setBrush(QtGui.QBrush(QtGui.QColor(r, g, b)))
         size = randint(50, 400)
         x = randint(10, self.frameGeometry().width() - size)
         y = randint(10, self.frameGeometry().height() - size)
