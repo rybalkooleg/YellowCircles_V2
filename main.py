@@ -11,7 +11,10 @@ class Main(QtWidgets.QMainWindow):
     
     def paintEvent(self, event):
         painter = QtGui.QPainter(self)
-        painter.setBrush(QtGui.QBrush(QtCore.Qt.yellow))
+        r = randint(0, 255)
+        g = randint(0, 255)
+        b = randint(0, 255)
+        painter.setBrush(QtGui.QBrush(QtCore.QColor(r, g, b)))
         size = randint(50, 400)
         x = randint(10, self.frameGeometry().width() - size)
         y = randint(10, self.frameGeometry().height() - size)
